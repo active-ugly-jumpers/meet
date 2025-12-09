@@ -27,13 +27,23 @@ const App = () => {
   }, [currentCity, currentNOE]);
 
   return (
-    <>
-      <div>
-        <CitySearch allLocations={allLocations} setCurrentCity={setCurrentCity} />
-        <NumberOfEvents currentNOE={currentNOE} setCurrentNOE={setCurrentNOE} />
-        <EventList events={events} />
-      </div>
-    </>
+    <div className="App">
+      <header className="app-header">
+        <h1>Meet</h1>
+        <p>Find events in your city</p>
+      </header>
+      
+      <main className="app-main">
+        <section className="controls">
+          <CitySearch allLocations={allLocations} setCurrentCity={setCurrentCity} />
+          <NumberOfEvents currentNOE={currentNOE} setCurrentNOE={setCurrentNOE} />
+        </section>
+        
+        <section className="events-section">
+          <EventList events={events} />
+        </section>
+      </main>
+    </div>
   )
 }
 
