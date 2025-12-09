@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 
-const NumberOfEvents = () => {
+const NumberOfEvents = ({ setCurrentNOE }) => {
   const [numberOfEvents, setNumberOfEvents] = useState(32);
 
   const handleInputChanged = (event) => {
     const value = event.target.value;
+    
+    if (!isNaN(value) && value > 0) {
+      setCurrentNOE(value);
+    }
+    
     setNumberOfEvents(value);
   };
 
