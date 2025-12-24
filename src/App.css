@@ -146,6 +146,19 @@ input[type="number"]:focus {
   background-color: var(--background-light);
 }
 
+.charts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .charts-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 #event-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -222,7 +235,7 @@ input[type="number"]:focus {
 }
 
 .details-btn:hover {
-  background-color: var(--primary-color) ;
+  background-color: var(--primary-color);
 }
 
 .alerts-container {
