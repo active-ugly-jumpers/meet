@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import EventList from './components/EventList';
 import CitySearch from './components/CitySearch';
 import NumberOfEvents from './components/NumberOfEvents';
+import CityEventsChart from './components/CityEventsChart';
 import { extractLocations, getEvents } from './api';
 import { InfoAlert, ErrorAlert, WarningAlert } from './components/Alert';
 
@@ -39,7 +40,6 @@ const App = () => {
   return (
     <div className="App">
 
-
       <header className="app-header">
         <h1>Meet</h1>
         <p>Find events in your city</p>
@@ -57,6 +57,7 @@ const App = () => {
         </section>
 
         <section className="events-section">
+          <CityEventsChart allLocations={allLocations} events={events} />
           <EventList events={events} />
         </section>
       </main>
