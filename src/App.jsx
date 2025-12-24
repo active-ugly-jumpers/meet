@@ -55,9 +55,12 @@ const App = () => {
           <CitySearch allLocations={allLocations} setCurrentCity={setCurrentCity} setInfoAlert={setInfoAlert} />
           <NumberOfEvents currentNOE={currentNOE} setCurrentNOE={setCurrentNOE} setErrorAlert={setErrorAlert} />
         </section>
-
+        <section className="data-vis-section">
+          <div className='charts-container'>
+            <CityEventsChart allLocations={allLocations} events={events} />
+          </div>
+        </section>
         <section className="events-section">
-          <CityEventsChart allLocations={allLocations} events={events} />
           <EventList events={events} />
         </section>
       </main>
