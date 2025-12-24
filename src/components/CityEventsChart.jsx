@@ -3,7 +3,7 @@ import {
     ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer
 } from "recharts";
 
-const CityEventsChart = ({ allLocations, events }) => {
+const EventGenresChart = ({ allLocations, events }) => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
@@ -45,4 +45,4 @@ const CityEventsChart = ({ allLocations, events }) => {
     );
 };
 
-export default CityEventsChart;
+export default EventGenresChart;
