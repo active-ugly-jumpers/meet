@@ -20,6 +20,8 @@ Meet App allows users to:
 
 The application is fully tested (Jest + React Testing Library) and developed following strict TDD cycles.
 
+![Meet App Screenshot](image1.png)
+
 ## Technologies Used
 
 - React (Vite)
