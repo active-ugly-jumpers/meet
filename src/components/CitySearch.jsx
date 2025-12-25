@@ -52,6 +52,9 @@ const CitySearch = ({ allLocations, setCurrentCity, setInfoAlert }) => {
                 </ul>
                 : null
             }
+            <small style={{ display: 'block', marginTop: '4px', color: '#666' }}>
+                Type in a city name to search for events in that city.
+            </small>
         </div>
     )
 }

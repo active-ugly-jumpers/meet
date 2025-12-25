@@ -24,6 +24,9 @@ const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
         value={numberOfEvents}
         onChange={handleInputChanged}
       />
+        <small style={{ display: 'block', marginTop: '4px', color: '#666' }}>
+          Enter a positive number to set how many events are shown.
+        </small>
     </div>
   );
 };
